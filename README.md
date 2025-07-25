@@ -11,7 +11,7 @@ Ensure you have the following before proceeding:
 - DonkeyCar is installed on your Raspberry Pi or local machine
 - A DonkeyCar project is already created using:
   ```bash
-  donkey createcar --path ~/mycar
+  donkey createcar --path ~/my_car
   ```
 - Internet connection to download the model
 - DonkeyCar vehicle setup and connected
@@ -31,7 +31,7 @@ Upload your `rnn4.tflite` model to the `models/` folder under your `my_car` dire
 Make sure the model file is located at:
 
 ```
-~/mycar/models/rnn4.tflite
+~/my_car/models/rnn4.tflite
 ```
 
 ---
@@ -41,7 +41,7 @@ Make sure the model file is located at:
 Launch your DonkeyCar vehicle with the model:
 
 ```bash
-cd ~/mycar
+cd ~/my_car
 python manage.py drive --model models/rnn4.tflite --type tflite_rnn
 ```
 
@@ -67,11 +67,15 @@ python train.py --tub ./data --model ./models/mypilot.h5 --type rnn
 
 - **Model not found?**  
   Ensure the file path is correct and that the `.tflite` file exists in the specified directory.
+  
+- **Package donkey not found?**  
+  Make sure that your conda virtual environment with Donkeycar installed on it is active.
 ---
 
 ## Resources
 
 - [DonkeyCar Documentation](https://docs.donkeycar.com/)
+- [Installation Video](https://youtu.be/J6Ll5Obtuxk?si=xSyy9eqBwJZcUoA0)
 
 ---
 
